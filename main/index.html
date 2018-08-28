@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>烟火不变的我--首页</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="../css/main/main.css" />
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/main/main.js" ></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+		<script src="../assets/js/script.js"></script>
+		<script type="text/javascript" src="../js/jquery-page.js" ></script>
+	</head>
+	<body>
+		<!--
+        	作者：BLYH0918@gmail.com
+        	时间：2018-08-25
+        	描述：主体部分
+    	-->
+    	<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    	<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">ItYunTeng</a>
+		    </div>
+		
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active" style="background-color: #46B8DA;"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">基本信息</a></li>
+		        <li><a href="#">专业技能</a></li>
+		        <li><a href="#">教育背景</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">校园风采<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">在校获奖</a></li>
+		            <li><a href="#">校园实践</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">我的大学</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工作经历<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">工作概况</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目经验<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">我的项目</a></li>
+		            <li><a href="#">项目预览</a></li>
+		            <li><a href="#">Git源码</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown">
+		        	<button id="evaluate" style="margin-top: 7px; margin-left: 12px;" class="btn btn-default" type="button">
+		        		面试评教
+		        	</button>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		</header>
+		<!--简历主区域-->
+		<center>
+			<div class="container" >
+				<div class="row">
+					<div class="col-sm-4 col-md-4">
+						<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+				            <ul class="nav bs-docs-sidenav">
+				                <li>
+								  <h3 class="text-center">烟火不变的我</h3>
+								  <div class="h_line"></div>
+								  <div id="img_nav" onmouseover="bigger();" onmouseout="smaller();" class="nav img_nav">
+							  		<img src="../img/index_myself.png" alt="我" title="烟火不变"/>
+							   		<p>Coding find another you!</p>
+								  </div>
+								</li>
+								<li>
+					  				<div class="nav time_nav">
+					    				<div id="clock" class="light">
+											<div class="display">
+												<div class="weekdays"></div>
+												<div class="ampm"></div>
+												<div class="alarm"></div>
+												<div class="digits"></div>
+											</div>
+										</div>
+					  				</div>
+								</li>
+								<li>
+									<div class="nav list_nav">
+										<div class="nav list_index">
+								  			<table class="table table-hover news">
+  												<tr>
+  													<td>
+  														<li><a href="#">将改革进行到打落记忆的篇章</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td>
+  														<li><a href="#">将改革进行到打落记忆的篇章，碎了一地旧墨</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td>
+  														<li><a href="#">段缱绻的浪漫情意，静渡初遇的悸动，在素净流年里书写着相遇时的幸福。底</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td>
+  														<li><a href="#">段缱绻的浪漫情意，静渡初遇的悸动，在素净流年里书写着相遇时的幸福。底</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td>
+  														<li><a href="#">段缱绻的浪漫情意，静渡初遇的悸动，在素净流年里书写着相遇时的幸福。底</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+  												<tr>
+  													<td style="border-bottom: 1px solid #DBDBDB;">
+  														<li><a href="#">段缱绻的浪漫情意，静渡初遇的悸动，在素净流年里书写着相遇时的幸福。底</a><em>[2017-07-20]</em></li>
+  													</td>
+  												</tr>
+											</table>
+											<div class="tcdPageCode">
+												<input type="hidden" name="pageCount" id="pageCount" value=""/>
+											</div>
+										</div>
+									</div>
+								</li>
+				            </ul>
+			          </nav>
+					</div>
+					<div class="col-sm-8 col-md-8 ev_main_center" role="complementary">
+						<div class="ev_main_top">
+							<div class="ev_main_top1">
+								<h2>简&nbsp;&nbsp;历</h2>
+								<p>
+									<span>求职岗位:</span>
+									<span>Java/Web/Php工程师</span>
+								</p>
+							</div>
+						</div>
+						<div class="ev_main_basicinfo">
+							<h3>基本信息</h3>
+							<div class="basicinfo1"></div>
+							<div class="basicinfo2"></div>
+						</div>
+						<div class="ev_main_majorinfo">
+							<h3>专业技能</h3>
+							<div class="majorinfo"></div>
+						</div>
+						<div class="ev_main_eduinfo">
+							<h3>教育背景</h3>
+							<div class="eduinfo"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>个人专业能力</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>主要获奖经历</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>主要工作经历</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>主要实践经历</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>主要项目概述</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>项目成果预览</h3>
+							<div class="personmajor"></div>
+						</div>
+						<div class="ev_main_personmajor">
+							<h3>自我评价</h3>
+							<div class="personmajor"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 copyright">
+						<div> 
+  							<p class="t-a-c">本站不良内容举报邮箱   1450431418@qq.com @简历网 版权所有 琼ICP备10200404号-1</p>
+							<p class="t-a-c"> 技术支持：<a href="http://www.bbw1040.cn" target="_blank">未来新定义的计算机公司</a></p>
+						</div>
+				</div>	
+			</div>
+		</div>
+		<!--
+        	作者：BLYH0918@gmail.com
+        	时间：2018-08-26
+        	描述：联系方式
+        -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-md-3">
+					<div class="roll_top">
+						<p class="roll_top_in">
+							<span><img src="../img/qq.jpg" alt="QQ">QQ</span>
+							<span><img src="../img/wechat.jpg" alt="WeChat">WeChat</span>
+							<span><img src="../img/gz_wechat.jpg" alt="微信公众号">微信公众号</span>
+						</p>
+						<a href="#top" class="mg_top" id="back-top">返回顶部</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--
+        	作者：BLYH0918@gmail.com
+        	时间：2018-08-25
+        	描述：评教弹框
+        -->
+        <div class="ev_container">
+			<div class="ev_frame">
+				<div class="ev_main">
+					<div class="ri_close"></div>
+					<h3>请您在本页填写本次面试的评教信息</h3>
+					<hr />
+					<from class="bs-example bs-example-form" role="form" action="#" method="POST" onsubmit="return check();">
+						<div class="input-group">
+							<span class="input-group-addon">公司名称：</span>
+            				<input type="text" class="form-control" placeholder="公司名称">
+						</div>
+						<hr />
+						<div class="input-group">
+							<span class="input-group-addon">联系方式：</span>
+							<input type="text" class="form-control" placeholder="QQ/Wechat/Tel">
+						</div>
+						<hr />
+						<div class="input-group">
+							<span class="input-group-addon">公司地址：</span>
+            				<input type="text" class="form-control" placeholder="公司地址">
+						</div>
+						<hr />
+						<div class="input-group">
+							<span class="input-group-addon">面试官职位：</span>
+							<input type="text" class="form-control" placeholder="面试人职位">
+						</div>
+						<hr />
+						<div class="input-group">
+							<span class="input-group-addon">面试官贵姓：</span>
+							<input type="text" class="form-control" placeholder="面试人贵姓">
+						</div>
+						<hr />
+						<div class="container">
+        					<div class="row">
+        						<div class="col-sm-12 col-md-12">
+        							<div class="input-group attitude_div">
+										<span >对本人评价：</span>
+										<span >
+			                        		<input name="attitude" id="attitude_1" value="非常满意" type="radio"><label for="attitude_1">非常满意</label>
+										</span>
+										<span >
+											<input name="attitude" id="attitude_2" value="一般满意" type="radio"><label for="attitude_2">一般满意</label>
+										</span>
+										<span >
+			                        		<input name="attitude" id="attitude_3" value="满意" type="radio"><label for="attitude_3">满意</label>
+			                        	</span>
+			                        	<span >
+			                        		<input name="attitude" id="attitude_4" value="不满意" type="radio"><label for="attitude_4">不满意</label>
+			                        	</span>
+									</div>
+									<div class="input-group In_results_div">
+										<span >面试结果：</span>
+										<span >
+			                        		<input name="In_results" id="In_results_1" value="直接入职" type="radio"><label for="In_results_1">直接入职</label>
+										</span>
+										<span >
+											<input name="In_results" id="In_results_2" value="等候通知" type="radio"><label for="In_results_2">等候通知</label>
+										</span>
+										<span >
+			                        		<input name="In_results" id="In_results_3" value="二次面试" type="radio"><label for="In_results_3">二次面试</label>
+			                        	</span>
+			                        	<span >
+			                        		<input name="In_results" id="In_results_4" value="未通过" type="radio"><label for="In_results_4">未通过</label>
+			                        	</span>
+									</div>
+        						</div>
+        					</div>
+        				</div>
+						<hr />
+						<div class="input-group advice_div">
+							<span>宝贵意见：</span>
+							<br />
+							<textarea class="form-control" cols="200" rows="6" placeholder="请写下您对我的宝贵意见"></textarea>
+						</div>
+						<div class="input-group">
+							<button type="submit" class="btn btn-primary sub_div">提交</button>
+						</div>
+					</from>
+				</div>
+			</div>
+        </div>
+	</body>
+</html>
