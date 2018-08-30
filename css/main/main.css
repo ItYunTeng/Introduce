@@ -365,3 +365,42 @@ body{
 	border:#66AFE9 solid 3px;
 	border-radius: 7px;
 }
+.left_code{
+	height: 500px;
+	width: 18%;
+	position: fixed;
+	bottom: 150px; 
+	z-index: 800;
+	left: -14.5px;
+}
+ .left_code_block{
+	height: 100%;
+	width: 98.2%;
+	border: 1px solid #737373;
+	padding: 22px;
+	white-space: nowrap; 
+    text-align: justify;
+    background: #DBDBDB;
+    border-radius: 4.5px;
+    position: relative;
+    float: left;
+    box-shadow:2px 2px 3px #9D9D9D;
+    /*margin-left: -348px;*/
+}
+.left_code_block>.code_block{
+	height: 100%;
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 6.5px;
+	border: 2px solid #1F1F1F;
+	overflow-y: scroll;
+}
+.left_code>.code_touch{
+	height:35px;
+	width:10px;
+	position: absolute;
+	left: 320px;
+	border: #122B40 solid 1px;
+	bottom: 50%;
+	border-radius: 3.5px;	
+}
