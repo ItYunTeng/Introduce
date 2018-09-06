@@ -14,6 +14,9 @@ $(function(){
 			pagelimit(p);
 		}
 	});
+	$(".manue>li").click(function(){
+		$(this).addClass('active').siblings().removeClass("active");
+	})
 })
 function bigger(){
 	$("#img_nav").css("transform","scale(1.1)");

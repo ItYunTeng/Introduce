@@ -21,7 +21,7 @@
         	描述：主体部分
     	-->
     	<header class="navbar navbar-static-top bs-docs-nav" id="top">
-    	<nav class="navbar navbar-default navbar-fixed-top">
+    	<nav class="navbar navbar-default navbar-fixed-top" id="nav-top">
 		  <div class="container">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -33,16 +33,16 @@
 		      <a class="navbar-brand" href="#">ItYunTeng</a>
 		    </div>
 		
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="active" style="background-color: #46B8DA;"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">基本信息</a></li>
-		        <li><a href="#">专业技能</a></li>
-		        <li><a href="#">教育背景</a></li>
+		    <div class="collapse navbar-collapse bs-js-navbar-scrollspy" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav manue">
+		        <li class="active"><a href="#">首页</a></li>
+		        <li><a href="#basicinfo" id="#abasicinfo">基本信息</a></li>
+		        <li><a href="#majorinfo">专业技能</a></li>
+		        <li><a href="#eduinfo">教育背景</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">校园风采<span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">在校获奖</a></li>
+		            <li><a href="#personmajor">在校获奖</a></li>
 		            <li><a href="#">校园实践</a></li>
 		            <li role="separator" class="divider"></li>
 		            <li><a href="#">我的大学</a></li>
@@ -155,44 +155,44 @@
 								</p>
 							</div>
 						</div>
-						<div class="ev_main_basicinfo">
+						<div class="ev_main_basicinfo bs-docs-section"  data-spy="scroll" data-target="#nav-top" data-offset="0" id="#basicinfo">
 							<h3>基本信息</h3>
 							<div class="basicinfo1"></div>
 							<div class="basicinfo2"></div>
 						</div>
-						<div class="ev_main_majorinfo">
+						<div class="ev_main_majorinfo bs-docs-section" data-spy="scroll" data-target="#nav-top" data-offset="0" id="majorinfo">
 							<h3>专业技能</h3>
 							<div class="majorinfo"></div>
 						</div>
-						<div class="ev_main_eduinfo">
+						<div class="ev_main_eduinfo bs-docs-section" data-spy="scroll" data-target="#nav-top" data-offset="0" id="eduinfo">
 							<h3>教育背景</h3>
 							<div class="eduinfo"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section" data-spy="scroll" data-target="#nav-top" data-offset="0" id="personmajor">
 							<h3>个人专业能力</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>主要获奖经历</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>主要工作经历</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>主要实践经历</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>主要项目概述</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>项目成果预览</h3>
 							<div class="personmajor"></div>
 						</div>
-						<div class="ev_main_personmajor">
+						<div class="ev_main_personmajor bs-docs-section">
 							<h3>自我评价</h3>
 							<div class="personmajor"></div>
 						</div>
